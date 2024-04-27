@@ -1,0 +1,7 @@
+.ViewStoryPageContainer {
+  min-height: 100vh;
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,189 @@
+.addStoryContainer {
+  position: relative;
+  width: 45vw;
+  padding: 1rem;
+  height: 60vh;
+}
+.titleText {
+  display: none;
+}
+.formContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #474141;
+}
+.modalCloseIcon {
+  position: absolute;
+  left: 96%;
+  top: -3%;
+}
+.slidesContainer {
+  position: relative;
+  margin-top: 0.3rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.slide {
+  position: relative;
+}
+.slide,
+.addSlideBtn {
+  width: 85px;
+  height: 85px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: var(--dmsans);
+  font-weight: bold;
+}
+.slideCloseIcon {
+  position: absolute;
+  top: -3%;
+}
+.activeSlide {
+  border: 2px solid #73abff;
+}
+.storyForm {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.inputGroup {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.inputGroup label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+}
+.inputGroup input,
+select {
+  width: 275px;
+  height: 35px;
+  font-size: 1rem;
+  padding: 2px;
+  border: 1.4px solid #000000;
+}
+.inputGroup select {
+  width: 280px;
+}
+.inputGroup textarea {
+  width: 275px;
+  height: 65px;
+  resize: none;
+  padding: 2px;
+  font-size: 1rem;
+  border: 1.4px solid #000000;
+  font-family: var(--dmsans);
+}
+.btnsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.btnsContainer button {
+  width: 115.87px;
+  height: 41.3px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.btnGroup {
+  display: flex;
+  gap: 1rem;
+}
+.previousBtn {
+  background-color: #7eff73;
+}
+.nextBtn {
+  background-color: #73abff;
+}
+.postBtn {
+  background: #ff7373;
+}
+.span1 {
+  position: absolute;
+  font-size: 0.8rem;
+  left: 81%;
+  color: #000000;
+}
+.span2 {
+  position: absolute;
+  left: 76%;
+  font-size: 0.8rem;
+  color: #000000;
+}
+@media only screen and (max-width: 767px) {
+  .span1,
+  .span2 {
+    display: none;
+  }
+  .addStoryContainer {
+    padding: 0;
+    height: auto;
+  }
+  .titleText {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .formContainer {
+    flex-direction: row;
+    gap: 0.4rem;
+    margin-top: -10px;
+  }
+  .slide,
+  .addSlideBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 0.6rem;
+  }
+  .slidesContainer {
+    height: 100%;
+    flex-direction: column;
+  }
+  .slideCloseIcon {
+    top: -3%;
+  }
+  .storyForm {
+    gap: 0.4rem;
+  }
+  .inputGroup {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .inputGroup label {
+    font-size: 1rem;
+  }
+  .inputGroup input,
+  span {
+    width: 200px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .inputGroup textarea {
+    width: 200px;
+  }
+  .inputGroup select {
+    width: 210px;
+  }
+  .btnGroup {
+    display: none;
+  }
+  .postBtn {
+    margin-top: 1rem;
+    margin-left: 20px;
+  }
+  .modalCloseIcon {
+    left: 155%;
+    top: -3%;
+  }
+}

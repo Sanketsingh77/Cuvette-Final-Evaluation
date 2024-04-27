@@ -1,0 +1,98 @@
+.appbar {
+  position: relative;
+  height: 8vh;
+  width: 100vw;
+  border-bottom: 0.2px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.btnGroup {
+  padding-top: 0.7rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.appbar button {
+  min-width: 110px;
+  max-width: auto;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+  font-size: 1rem;
+  font-family: var(--dmsans);
+}
+.loginBtn {
+  background: #73abff;
+}
+.registerBtn,
+.logoutBtn,
+.bookmarkBtn,
+.addStoryBtn {
+  background: #ff7373;
+}
+.active {
+  border: 2px solid #085cff;
+}
+.logoutBox {
+  z-index: 2;
+  position: absolute;
+  width: 17vw;
+  height: 20vh;
+  top: 84%;
+  left: 82.9vw;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.mobileMenu,
+.mobileham {
+  display: none;
+}
+.userName {
+  font-size: 1rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+  .appbar {
+    position: relative;
+  }
+  .btnGroup {
+    display: none;
+  }
+  .mobileham {
+    display: block;
+  }
+  .mobileMenu {
+    z-index: 1;
+    background: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    right: 0.1%;
+    display: block;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 40vh;
+    max-height: auto;
+  }
+}
