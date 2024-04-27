@@ -1,0 +1,194 @@
+.main_container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 3vw;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+
+  .title {
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .btns {
+    display: flex;
+    gap: 0 1rem;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+
+    .register {
+      all: unset;
+      flex: 1 1 0;
+      background-color: var(--red-btn);
+      padding: 0.5rem 0.8rem;
+      border-radius: 17px;
+      width: 8rem;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.09);
+      }
+    }
+    .login {
+      all: unset;
+      flex: 1 1 0;
+      background-color: var(--blue-btn);
+      padding: 0.5rem 0.8rem;
+      border-radius: 17px;
+      width: 8rem;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.09);
+      }
+    }
+
+    .bookmarks {
+      all: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      flex: 1 1 0;
+      background-color: var(--red-btn);
+      padding: 0.5rem 0.8rem;
+      border-radius: 17px;
+      width: 8rem;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.09);
+      }
+    }
+    .addStory {
+      all: unset;
+      flex: 1 1 0;
+      background-color: var(--red-btn);
+      padding: 0.5rem 0.8rem;
+      border-radius: 17px;
+      width: 8rem;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.09);
+      }
+    }
+  }
+
+  .availabeUserBtns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+  }
+
+  .userImg {
+    width: 2.7rem;
+    height: 2.7rem;
+    border: 1px solid;
+    border-radius: 50%;
+  }
+
+  .menuIcon {
+    cursor: pointer;
+  }
+
+  .menuArea {
+    position: absolute;
+    background-color: white;
+    top: 3rem;
+    right: 0;
+    z-index: 10;
+    padding: 1.2rem;
+
+    .yourName {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .logout {
+      all: unset;
+      color: white;
+      text-align: center;
+      font-weight: 500;
+      background-color: var(--red-btn);
+      padding: 0.5rem 0.8rem;
+      border-radius: 17px;
+      width: 8rem;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.09);
+      }
+    }
+  }
+}
+
+.smallScreen {
+  .mobContainer {
+    position: fixed;
+    top: 3.6rem;
+    left: 0;
+    height: 52vh;
+    width: 100vw;
+    z-index: 100;
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+
+    .mobBtn {
+      all: unset;
+      width: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 1rem;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      background-color: var(--red-btn);
+      padding: 0.5rem 0.8rem;
+      border-radius: 17px;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.09);
+      }
+    }
+  }
+
+  .profileArea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+
+    .yourNameMob {
+      color: black;
+      font-size: 20px;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  .bigScreen {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .smallScreen {
+    display: none;
+  }
+}

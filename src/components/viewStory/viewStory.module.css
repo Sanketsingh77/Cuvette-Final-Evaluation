@@ -1,0 +1,148 @@
+.story {
+  position: relative;
+
+  .closeIcon {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+  .shareIcon {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .storyImage {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  .title {
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+    color: white;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-right: 0.7rem;
+  }
+  .desc {
+    position: absolute;
+    top: 29rem;
+    left: 1rem;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    margin-right: 0.7rem;
+  }
+
+  .bookmarkIcon {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+  .bookmarkActiveIcon {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: blue;
+    cursor: pointer;
+  }
+
+  .heartIcon {
+    position: absolute;
+    bottom: 1rem;
+    right: 50px;
+    color: white;
+    cursor: pointer;
+  }
+  .heartActiveIcon {
+    position: absolute;
+    bottom: 1rem;
+    right: 50px;
+    color: red;
+    cursor: pointer;
+  }
+
+  .numberOfLikes {
+    position: absolute;
+    bottom: 1rem;
+    right: 20px;
+    color: white;
+  }
+}
+
+.story::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.9) 10%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8) 85%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.progressBarContainer {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 15px;
+}
+
+.progressBar {
+  height: 5px;
+  width: 100%;
+  background-color: #d9d9d980;
+}
+
+.progressBarActive {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  background: linear-gradient(to right, #d9d9d980 50%, white 50%) right;
+  background-size: 200%;
+  transition: 3s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .storyImage {
+    height: 100vh !important;
+  }
+  .title {
+    top: 33rem !important;
+  }
+  .desc {
+    top: 35rem !important;
+  }
+}

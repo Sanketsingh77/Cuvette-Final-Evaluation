@@ -1,0 +1,81 @@
+.title {
+  font-size: 20px;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+}
+
+.modal_input {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  justify-content: space-between;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    right: 4px;
+    top: 8px;
+  }
+}
+
+.modal_input > input {
+  border-radius: 5px;
+  outline: none;
+  padding: 2px 28px 2px 5px;
+  border: 1px solid gray;
+  width: 65%;
+}
+
+.modal_input > label {
+  font-weight: 500;
+}
+
+.modal_btn_div {
+  display: flex;
+  justify-content: center;
+}
+
+.modalBtn {
+  background-color: var(--blue-btn);
+  color: white;
+  border-radius: 17px;
+  border: none;
+  padding: 0.3rem 2rem;
+  width: fit-content;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.colors {
+  display: flex;
+  width: 60%;
+  gap: 0 10px;
+  justify-content: flex-start;
+}
+
+.modal_input_color {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: red;
+  cursor: pointer;
+}
